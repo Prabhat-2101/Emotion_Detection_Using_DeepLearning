@@ -44,6 +44,10 @@ st.markdown(
         color: #000;
         margin-top: 1rem;
     }
+    .footer a{
+        font-family: 'poppins', sans-serif;
+        font-size: 0.8rem;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -64,5 +68,13 @@ if uploaded_file is not None:
             st.success(f"Predicted Emotion: {emotion}")
 
 st.markdown('</div>', unsafe_allow_html=True)
-st.markdown('<div class="footer">Developed by Prabhat Kumar Raj</div>', unsafe_allow_html=True)
-st.markdown('<div class="copyright">&copy; 2024 Prabhat-2101. All rights reserved.</div>', unsafe_allow_html=True)
+st.markdown('''
+    <div class="footer">
+        Developed by Prabhat Kumar Raj
+        <br>
+        <a href="https://github.com/Prabhat-2101/Emotion_Detection_Using_DeepLearning" target="_blank">View on GitHub</a>
+    </div>
+    <div class="copyright">
+        &copy; 2024 All rights reserved @moodscannerai
+    </div>
+    ''', unsafe_allow_html=True)
